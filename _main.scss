@@ -1,0 +1,58 @@
+main {
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  background-color: $color-terciario;
+
+  height: 100%;
+  text-align: center;
+}
+.contenedorPadre {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% auto 10%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  height: 100%;
+
+  .titulo {
+    color: $color-secundario;
+    text-align: center;
+  }
+
+  .agenda {
+    background-color: $color-cuatro;
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+.contenedorServicios {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background-color: $color-cinco;
+  border: 1px solid black;
+  margin: 15px;
+  text-align: center;
+
+  .tablas {
+    text-align: center;
+  }
+  .linksdenav {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+  }
+}

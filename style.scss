@@ -1,0 +1,15 @@
+@import "variables";
+@import "header";
+@import "main";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  color: $color-secundario;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+}
